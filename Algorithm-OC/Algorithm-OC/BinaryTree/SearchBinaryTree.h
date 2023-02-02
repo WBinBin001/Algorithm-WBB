@@ -11,10 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SearchBinaryTree : NSObject
 
+- (void)add:(id)element;
+
 - (id)rootNode;
 - (id)left:(id)node;
 - (id)right:(id)node;
-- (void)add:(id)element;
 - (id)string:(id)node;
 
 @end
