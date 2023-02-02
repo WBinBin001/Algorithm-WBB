@@ -87,7 +87,6 @@
     NSString *newline = @"\n";
     NSString *string = newline;
 
-//    for (NSInteger i = self.nodes.count - 1; i>=0; i--) {
     for (NSInteger i = 0; i < self.nodes.count; i++) {
 
         NSArray *rows = self.nodes[i];
@@ -111,7 +110,6 @@
 
     [preRows addObject:self.root];
     [self.nodes addObject:preRows];
-    
     
     while (1) {
         NSMutableArray *curRows = [@[] mutableCopy];
