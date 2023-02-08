@@ -10,11 +10,13 @@
 
 @interface BTPrintNode : NSObject
 
-@property (nonatomic, assign) NSUInteger x;
-@property (nonatomic, assign) NSUInteger y;
-@property (nonatomic, assign) NSUInteger width;
+@property (nonatomic, assign) int x;
+@property (nonatomic, assign) int y;
+@property (nonatomic, assign) int width;
+@property (nonatomic, assign) NSString *string;
 @property (nonatomic, strong) BTPrintNode *left;
 @property (nonatomic, strong) BTPrintNode *right;
+@property (nonatomic, strong) BTPrintNode *parent;
 @property (nonatomic, strong) id btNode;
 
 @end
@@ -24,17 +26,38 @@
 
 + (instancetype)nodeWithNode:(id)node tree:(SearchBinaryTree *)tree
 {
-    return [[BTPrintNode alloc] initWithNode:node tree:tree];
+    BTPrintNode *pNode = [[BTPrintNode alloc] initWithString:[[tree string:node] description]];
+    pNode.btNode = node;
+    return pNode;
 }
 
-- (instancetype)initWithNode:(id)node tree:(SearchBinaryTree *)tree
+
++ (instancetype)nodeWithString:(NSString *)string
+{
+    return [[self alloc] initWithString:string];
+}
+
+- (instancetype)initWithString:(NSString *)string
 {
     self = [super init];
     if(self){
-        self.btNode = node;
-        self.width = [[tree string:node] description].length;
+        self.width = (int)string.length;
+        self.string = string;
     }
     return self;
+}
+
+
+- (int)leftNodeCenterX
+{
+    if(!self.left) return self.x;
+    return self.left.x;
+}
+
+- (int)rightNodeCenterX
+{
+    if(!self.right) return self.x + self.width;
+    return self.right.x;
 }
 
 @end
@@ -80,7 +103,8 @@
 {
     [self addNodes];
     [self configNodeOriginPoint];
-//    [self _print__001];
+//    [self addLineNodes];
+    [self _print__001];
     [self _print__002];
 }
 
@@ -138,9 +162,9 @@
         NSArray *rows = self.nodes[i];
         NSMutableString *currentLineString = [normalString mutableCopy];
 
-        for (NSInteger i=0; i<rows.count; i++) {
-            BTPrintNode *pNode = rows[i];
-            NSString *element = [[self.tree string:pNode.btNode] description];
+        for (NSInteger j=0; j<rows.count; j++) {
+            BTPrintNode *pNode = rows[j];
+            NSString *element = pNode.string;
             [currentLineString replaceCharactersInRange:NSMakeRange(pNode.x, element.length) withString:element];
         }
         string = [string stringByAppendingString:currentLineString];
@@ -166,7 +190,9 @@
             if(leftNode){
                 isStop = NO;
                 BTPrintNode *leftPNode = [BTPrintNode nodeWithNode:leftNode tree:self.tree];
+                leftPNode.parent = printNode;
                 self.maxWidth = MAX(leftPNode.width, self.maxWidth);
+                printNode.left = leftPNode;
                 [curRows addObject:leftPNode];
             }
             
@@ -174,6 +200,8 @@
             if(rightNode){
                 isStop = NO;
                 BTPrintNode *rightPNode = [BTPrintNode nodeWithNode:rightNode tree:self.tree];
+                rightPNode.parent = printNode;
+                printNode.right = rightPNode;
                 self.maxWidth = MAX(rightPNode.width, self.maxWidth);
                 [curRows addObject:rightPNode];
             }
@@ -221,6 +249,69 @@
         }
         
     }
+}
+
+- (void)addLineNodes
+{
+    NSMutableArray *newNodes = [@[] mutableCopy];
+    for (NSInteger i=0; i<self.nodes.count; i++) {
+        NSArray *rows = self.nodes[i];
+        NSMutableArray *newRows = [@[] mutableCopy];
+        NSMutableArray *verticalLines = [@[] mutableCopy];
+
+        for (NSInteger j=0; j<rows.count; j++) {
+            BTPrintNode *pNode = rows[j];
+            NSArray *subRowNodes = [self lineNodesRelyOnNode:pNode];
+            [newRows addObjectsFromArray:subRowNodes];
+            [verticalLines addObjectsFromArray:[self verticallineNodesRelyOnNode:pNode]];
+        }
+        [newNodes addObject:newRows];
+        [newNodes addObject:verticalLines];
+    }
+    self.nodes = [newNodes copy];
+}
+
+- (NSArray *)verticallineNodesRelyOnNode:(BTPrintNode *)node
+{
+    NSMutableArray *mutableArray = [@[] mutableCopy];
+    BTPrintNode *left = [BTPrintNode nodeWithString:@"|"];
+    left.x = [node leftNodeCenterX];
+    left.y = node.y + 1;
+    [mutableArray addObject:left];
+
+
+    BTPrintNode *right = [BTPrintNode nodeWithString:@"|"];
+    right.x = [node rightNodeCenterX];
+    right.y = node.y + 1;
+    [mutableArray addObject:right];
+    return [mutableArray copy];
+}
+
+
+- (NSArray *)lineNodesRelyOnNode:(BTPrintNode *)node
+{
+//    [node.string isEqualToString:@"4"]
+    NSMutableArray *mutableArray = [@[] mutableCopy];
+    int leftWith = node.x - [node leftNodeCenterX];
+    for (int i=0; i<leftWith; i++) {
+        BTPrintNode *lineNode = [BTPrintNode nodeWithString:@"-"];
+        lineNode.x = (int)[node leftNodeCenterX] + i;
+        lineNode.y = node.y;
+        [mutableArray addObject:lineNode];
+    }
+
+    [mutableArray addObject:node];
+
+    int rightWith = [node rightNodeCenterX] - node.x - node.width;
+    for (int i=0; i<rightWith; i++) {
+        BTPrintNode *lineNode = [BTPrintNode nodeWithString:@"-"];
+        lineNode.x = (int)[node rightNodeCenterX] + i;
+        lineNode.y = node.y + 1;
+        [mutableArray addObject:lineNode];
+    }
+
+    return [mutableArray copy];
+
 }
 
 @end

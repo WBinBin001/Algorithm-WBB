@@ -7,13 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1843AA572987A03900B7A528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AA562987A03900B7A528 /* main.m */; };
-		1843AA602987A09000B7A528 /* SearchBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AA5E2987A09000B7A528 /* SearchBinaryTree.m */; };
-		1843AA63298A0F2B00B7A528 /* BTPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AA62298A0F2B00B7A528 /* BTPrinter.m */; };
+		1843AAEC29937A6A00B7A528 /* Algorithm_OCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AAEB29937A6A00B7A528 /* Algorithm_OCApp.swift */; };
+		1843AAEE29937A6A00B7A528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AAED29937A6A00B7A528 /* ContentView.swift */; };
+		1843AAF029937A7000B7A528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843AAEF29937A7000B7A528 /* Assets.xcassets */; };
+		1843AAF329937A7000B7A528 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1843AAF229937A7000B7A528 /* Preview Assets.xcassets */; };
+		1843AAFE29937A7100B7A528 /* Algorithm_OCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AAFD29937A7100B7A528 /* Algorithm_OCTests.swift */; };
+		1843AB0929937A7100B7A528 /* Algorithm_OCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AB0829937A7100B7A528 /* Algorithm_OCUITests.swift */; };
+		1843AB1D29937AC400B7A528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AB1C29937AC400B7A528 /* main.m */; };
+		1843AB2629937AD800B7A528 /* BTPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AB2229937AD800B7A528 /* BTPrinter.m */; };
+		1843AB2729937AD800B7A528 /* SearchBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843AB2329937AD800B7A528 /* SearchBinaryTree.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1843AAFA29937A7100B7A528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1843AAE029937A6A00B7A528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1843AAE729937A6A00B7A528;
+			remoteInfo = "Algorithm-OC";
+		};
+		1843AB0529937A7100B7A528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1843AAE029937A6A00B7A528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1843AAE729937A6A00B7A528;
+			remoteInfo = "Algorithm-OC";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		1843AA512987A03900B7A528 /* CopyFiles */ = {
+		1843AB1829937AC400B7A528 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +48,49 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1843AA532987A03900B7A528 /* Algorithm-OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algorithm-OC"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1843AA562987A03900B7A528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1843AA5E2987A09000B7A528 /* SearchBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBinaryTree.m; sourceTree = "<group>"; };
-		1843AA5F2987A09000B7A528 /* SearchBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBinaryTree.h; sourceTree = "<group>"; };
-		1843AA61298A0F2B00B7A528 /* BTPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTPrinter.h; sourceTree = "<group>"; };
-		1843AA62298A0F2B00B7A528 /* BTPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPrinter.m; sourceTree = "<group>"; };
+		1843AAE829937A6A00B7A528 /* Algorithm-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithm-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843AAEB29937A6A00B7A528 /* Algorithm_OCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm_OCApp.swift; sourceTree = "<group>"; };
+		1843AAED29937A6A00B7A528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1843AAEF29937A7000B7A528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1843AAF229937A7000B7A528 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1843AAF429937A7000B7A528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1843AAF929937A7100B7A528 /* Algorithm-OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithm-OCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843AAFD29937A7100B7A528 /* Algorithm_OCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm_OCTests.swift; sourceTree = "<group>"; };
+		1843AAFF29937A7100B7A528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1843AB0429937A7100B7A528 /* Algorithm-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithm-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843AB0829937A7100B7A528 /* Algorithm_OCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm_OCUITests.swift; sourceTree = "<group>"; };
+		1843AB0A29937A7100B7A528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1843AB1A29937AC400B7A528 /* BinaryTree-OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BinaryTree-OC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843AB1C29937AC400B7A528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1843AB2229937AD800B7A528 /* BTPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPrinter.m; sourceTree = "<group>"; };
+		1843AB2329937AD800B7A528 /* SearchBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBinaryTree.m; sourceTree = "<group>"; };
+		1843AB2429937AD800B7A528 /* BTPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPrinter.h; sourceTree = "<group>"; };
+		1843AB2529937AD800B7A528 /* SearchBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBinaryTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1843AA502987A03900B7A528 /* Frameworks */ = {
+		1843AAE529937A6A00B7A528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AAF629937A7100B7A528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AB0129937A7100B7A528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AB1729937AC400B7A528 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,38 +100,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1843AA4A2987A03900B7A528 = {
+		1843AADF29937A6A00B7A528 = {
 			isa = PBXGroup;
 			children = (
-				1843AA552987A03900B7A528 /* Algorithm-OC */,
-				1843AA542987A03900B7A528 /* Products */,
+				1843AAEA29937A6A00B7A528 /* Algorithm-OC */,
+				1843AAFC29937A7100B7A528 /* Algorithm-OCTests */,
+				1843AB0729937A7100B7A528 /* Algorithm-OCUITests */,
+				1843AB1B29937AC400B7A528 /* BinaryTree-OC */,
+				1843AAE929937A6A00B7A528 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1843AA542987A03900B7A528 /* Products */ = {
+		1843AAE929937A6A00B7A528 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1843AA532987A03900B7A528 /* Algorithm-OC */,
+				1843AAE829937A6A00B7A528 /* Algorithm-OC.app */,
+				1843AAF929937A7100B7A528 /* Algorithm-OCTests.xctest */,
+				1843AB0429937A7100B7A528 /* Algorithm-OCUITests.xctest */,
+				1843AB1A29937AC400B7A528 /* BinaryTree-OC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1843AA552987A03900B7A528 /* Algorithm-OC */ = {
+		1843AAEA29937A6A00B7A528 /* Algorithm-OC */ = {
 			isa = PBXGroup;
 			children = (
-				1843AA5D2987A09000B7A528 /* BinaryTree */,
-				1843AA562987A03900B7A528 /* main.m */,
+				1843AAEB29937A6A00B7A528 /* Algorithm_OCApp.swift */,
+				1843AAED29937A6A00B7A528 /* ContentView.swift */,
+				1843AAEF29937A7000B7A528 /* Assets.xcassets */,
+				1843AAF429937A7000B7A528 /* Info.plist */,
+				1843AAF129937A7000B7A528 /* Preview Content */,
 			);
 			path = "Algorithm-OC";
 			sourceTree = "<group>";
 		};
-		1843AA5D2987A09000B7A528 /* BinaryTree */ = {
+		1843AAF129937A7000B7A528 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1843AA5F2987A09000B7A528 /* SearchBinaryTree.h */,
-				1843AA5E2987A09000B7A528 /* SearchBinaryTree.m */,
-				1843AA61298A0F2B00B7A528 /* BTPrinter.h */,
-				1843AA62298A0F2B00B7A528 /* BTPrinter.m */,
+				1843AAF229937A7000B7A528 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1843AAFC29937A7100B7A528 /* Algorithm-OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				1843AAFD29937A7100B7A528 /* Algorithm_OCTests.swift */,
+				1843AAFF29937A7100B7A528 /* Info.plist */,
+			);
+			path = "Algorithm-OCTests";
+			sourceTree = "<group>";
+		};
+		1843AB0729937A7100B7A528 /* Algorithm-OCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1843AB0829937A7100B7A528 /* Algorithm_OCUITests.swift */,
+				1843AB0A29937A7100B7A528 /* Info.plist */,
+			);
+			path = "Algorithm-OCUITests";
+			sourceTree = "<group>";
+		};
+		1843AB1B29937AC400B7A528 /* BinaryTree-OC */ = {
+			isa = PBXGroup;
+			children = (
+				1843AB2129937AD800B7A528 /* BinaryTree */,
+				1843AB1C29937AC400B7A528 /* main.m */,
+			);
+			path = "BinaryTree-OC";
+			sourceTree = "<group>";
+		};
+		1843AB2129937AD800B7A528 /* BinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				1843AB2429937AD800B7A528 /* BTPrinter.h */,
+				1843AB2229937AD800B7A528 /* BTPrinter.m */,
+				1843AB2329937AD800B7A528 /* SearchBinaryTree.m */,
+				1843AB2529937AD800B7A528 /* SearchBinaryTree.h */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -83,13 +183,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1843AA522987A03900B7A528 /* Algorithm-OC */ = {
+		1843AAE729937A6A00B7A528 /* Algorithm-OC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1843AA5A2987A03900B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OC" */;
+			buildConfigurationList = 1843AB0D29937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OC" */;
 			buildPhases = (
-				1843AA4F2987A03900B7A528 /* Sources */,
-				1843AA502987A03900B7A528 /* Frameworks */,
-				1843AA512987A03900B7A528 /* CopyFiles */,
+				1843AAE429937A6A00B7A528 /* Sources */,
+				1843AAE529937A6A00B7A528 /* Frameworks */,
+				1843AAE629937A6A00B7A528 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -97,23 +197,88 @@
 			);
 			name = "Algorithm-OC";
 			productName = "Algorithm-OC";
-			productReference = 1843AA532987A03900B7A528 /* Algorithm-OC */;
+			productReference = 1843AAE829937A6A00B7A528 /* Algorithm-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1843AAF829937A7100B7A528 /* Algorithm-OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843AB1029937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OCTests" */;
+			buildPhases = (
+				1843AAF529937A7100B7A528 /* Sources */,
+				1843AAF629937A7100B7A528 /* Frameworks */,
+				1843AAF729937A7100B7A528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1843AAFB29937A7100B7A528 /* PBXTargetDependency */,
+			);
+			name = "Algorithm-OCTests";
+			productName = "Algorithm-OCTests";
+			productReference = 1843AAF929937A7100B7A528 /* Algorithm-OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1843AB0329937A7100B7A528 /* Algorithm-OCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843AB1329937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OCUITests" */;
+			buildPhases = (
+				1843AB0029937A7100B7A528 /* Sources */,
+				1843AB0129937A7100B7A528 /* Frameworks */,
+				1843AB0229937A7100B7A528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1843AB0629937A7100B7A528 /* PBXTargetDependency */,
+			);
+			name = "Algorithm-OCUITests";
+			productName = "Algorithm-OCUITests";
+			productReference = 1843AB0429937A7100B7A528 /* Algorithm-OCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1843AB1929937AC400B7A528 /* BinaryTree-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843AB1E29937AC400B7A528 /* Build configuration list for PBXNativeTarget "BinaryTree-OC" */;
+			buildPhases = (
+				1843AB1629937AC400B7A528 /* Sources */,
+				1843AB1729937AC400B7A528 /* Frameworks */,
+				1843AB1829937AC400B7A528 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BinaryTree-OC";
+			productName = "BinaryTree-OC";
+			productReference = 1843AB1A29937AC400B7A528 /* BinaryTree-OC */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1843AA4B2987A03900B7A528 /* Project object */ = {
+		1843AAE029937A6A00B7A528 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					1843AA522987A03900B7A528 = {
+					1843AAE729937A6A00B7A528 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1843AAF829937A7100B7A528 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1843AAE729937A6A00B7A528;
+					};
+					1843AB0329937A7100B7A528 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1843AAE729937A6A00B7A528;
+					};
+					1843AB1929937AC400B7A528 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 1843AA4E2987A03900B7A528 /* Build configuration list for PBXProject "Algorithm-OC" */;
+			buildConfigurationList = 1843AAE329937A6A00B7A528 /* Build configuration list for PBXProject "Algorithm-OC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,31 +286,98 @@
 				en,
 				Base,
 			);
-			mainGroup = 1843AA4A2987A03900B7A528;
-			productRefGroup = 1843AA542987A03900B7A528 /* Products */;
+			mainGroup = 1843AADF29937A6A00B7A528;
+			productRefGroup = 1843AAE929937A6A00B7A528 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1843AA522987A03900B7A528 /* Algorithm-OC */,
+				1843AAE729937A6A00B7A528 /* Algorithm-OC */,
+				1843AAF829937A7100B7A528 /* Algorithm-OCTests */,
+				1843AB0329937A7100B7A528 /* Algorithm-OCUITests */,
+				1843AB1929937AC400B7A528 /* BinaryTree-OC */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1843AAE629937A6A00B7A528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843AAF329937A7000B7A528 /* Preview Assets.xcassets in Resources */,
+				1843AAF029937A7000B7A528 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AAF729937A7100B7A528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AB0229937A7100B7A528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		1843AA4F2987A03900B7A528 /* Sources */ = {
+		1843AAE429937A6A00B7A528 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1843AA602987A09000B7A528 /* SearchBinaryTree.m in Sources */,
-				1843AA572987A03900B7A528 /* main.m in Sources */,
-				1843AA63298A0F2B00B7A528 /* BTPrinter.m in Sources */,
+				1843AAEE29937A6A00B7A528 /* ContentView.swift in Sources */,
+				1843AAEC29937A6A00B7A528 /* Algorithm_OCApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AAF529937A7100B7A528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843AAFE29937A7100B7A528 /* Algorithm_OCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AB0029937A7100B7A528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843AB0929937A7100B7A528 /* Algorithm_OCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1843AB1629937AC400B7A528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843AB2629937AD800B7A528 /* BTPrinter.m in Sources */,
+				1843AB2729937AD800B7A528 /* SearchBinaryTree.m in Sources */,
+				1843AB1D29937AC400B7A528 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1843AAFB29937A7100B7A528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1843AAE729937A6A00B7A528 /* Algorithm-OC */;
+			targetProxy = 1843AAFA29937A7100B7A528 /* PBXContainerItemProxy */;
+		};
+		1843AB0629937A7100B7A528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1843AAE729937A6A00B7A528 /* Algorithm-OC */;
+			targetProxy = 1843AB0529937A7100B7A528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1843AA582987A03900B7A528 /* Debug */ = {
+		1843AB0B29937A7100B7A528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,15 +428,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1843AA592987A03900B7A528 /* Release */ = {
+		1843AB0C29937A7100B7A528 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,55 +483,217 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1843AA5B2987A03900B7A528 /* Debug */ = {
+		1843AB0E29937A7100B7A528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Algorithm-OC/Preview Content\"";
 				DEVELOPMENT_TEAM = 2N3LY2CR7S;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Algorithm-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1843AA5C2987A03900B7A528 /* Release */ = {
+		1843AB0F29937A7100B7A528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Algorithm-OC/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Algorithm-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1843AB1129937A7100B7A528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = "Algorithm-OCTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm-OC.app/Algorithm-OC";
+			};
+			name = Debug;
+		};
+		1843AB1229937A7100B7A528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = "Algorithm-OCTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm-OC.app/Algorithm-OC";
+			};
+			name = Release;
+		};
+		1843AB1429937A7100B7A528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = "Algorithm-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Algorithm-OC";
+			};
+			name = Debug;
+		};
+		1843AB1529937A7100B7A528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = "Algorithm-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbb.Algorithm-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Algorithm-OC";
+			};
+			name = Release;
+		};
+		1843AB1F29937AC400B7A528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N3LY2CR7S;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1843AB2029937AC400B7A528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1843AA4E2987A03900B7A528 /* Build configuration list for PBXProject "Algorithm-OC" */ = {
+		1843AAE329937A6A00B7A528 /* Build configuration list for PBXProject "Algorithm-OC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1843AA582987A03900B7A528 /* Debug */,
-				1843AA592987A03900B7A528 /* Release */,
+				1843AB0B29937A7100B7A528 /* Debug */,
+				1843AB0C29937A7100B7A528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1843AA5A2987A03900B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OC" */ = {
+		1843AB0D29937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1843AA5B2987A03900B7A528 /* Debug */,
-				1843AA5C2987A03900B7A528 /* Release */,
+				1843AB0E29937A7100B7A528 /* Debug */,
+				1843AB0F29937A7100B7A528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1843AB1029937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843AB1129937A7100B7A528 /* Debug */,
+				1843AB1229937A7100B7A528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1843AB1329937A7100B7A528 /* Build configuration list for PBXNativeTarget "Algorithm-OCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843AB1429937A7100B7A528 /* Debug */,
+				1843AB1529937A7100B7A528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1843AB1E29937AC400B7A528 /* Build configuration list for PBXNativeTarget "BinaryTree-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843AB1F29937AC400B7A528 /* Debug */,
+				1843AB2029937AC400B7A528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1843AA4B2987A03900B7A528 /* Project object */;
+	rootObject = 1843AAE029937A6A00B7A528 /* Project object */;
 }
